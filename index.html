@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Echoistix | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"> <!-- Gothic/hacker font -->
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Inter', sans-serif;
-      background: url('clouds.png') no-repeat center/cover fixed; /* Full background */
-      color: #f8fafc;
+      font-family: 'Orbitron', sans-serif; /* Gothic/hacker vibe font */
+      background: #1a1a1a; /* Dark background */
+      color: #ff3333; /* Red text */
       line-height: 1.6;
       padding: 2rem;
     }
@@ -18,53 +18,54 @@
       text-align: center;
       margin-bottom: 4rem;
       padding: 2rem;
-      border-radius: 1rem;
-      background: rgba(15, 23, 42, 0.8); /* Semi-transparent overlay for readability */
+      background: rgba(26, 26, 26, 0.9); /* Darker overlay for contrast */
+      border: 2px solid #ff3333; /* Red border for hacker vibe */
+      border-radius: 0.5rem;
     }
-    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    h2 { font-size: 1.75rem; margin: 3rem 0 1.5rem; text-align: center; color: #38bdf8; }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; text-transform: uppercase; }
+    h2 { font-size: 1.75rem; margin: 3rem 0 1.5rem; text-align: center; text-shadow: 0 0 5px #ff3333; }
     p { max-width: 700px; margin: 0 auto; }
     .projects, .certificates {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      max-width: 1000px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Slightly wider for certificates */
+      gap: 2rem;
+      max-width: 1100px;
       margin: 0 auto;
-      background: rgba(30, 41, 59, 0.9); /* Semi-transparent background for cards */
-      padding: 1.5rem;
-      border-radius: 1rem;
+      background: rgba(26, 26, 26, 0.9); /* Dark semi-transparent background */
+      padding: 2rem;
+      border: 1px dashed #ff3333; /* Hacker-style dashed border */
+      border-radius: 0.5rem;
     }
     .card {
-      background: rgba(30, 41, 59, 0.9); /* Semi-transparent for consistency */
+      background: rgba(30, 30, 30, 0.9);
       padding: 1.5rem;
-      border-radius: 1rem;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(255, 51, 51, 0.3); /* Red shadow for vibe */
+      transition: transform 0.3s ease;
       text-align: center;
       position: relative;
-      overflow: hidden;
     }
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
     }
     .card h3 {
       margin-bottom: 0.5rem;
-      color: #38bdf8;
+      color: #ff6666; /* Lighter red for headers */
       font-size: 1.5rem;
     }
     .card p {
       font-size: 0.95rem;
     }
-    a { color: #38bdf8; text-decoration: none; }
+    a { color: #ff9999; text-decoration: none; }
     footer {
       margin-top: 4rem;
       text-align: center;
       font-size: 0.9rem;
-      color: #94a3b8;
-      background: rgba(15, 23, 42, 0.8); /* Semi-transparent footer */
+      color: #ff3333;
+      background: rgba(26, 26, 26, 0.9);
       padding: 1rem;
-      border-radius: 1rem;
+      border: 1px solid #ff3333;
+      border-radius: 0.5rem;
     }
     .social-links {
       text-align: center;
@@ -73,44 +74,45 @@
     .badge-section {
       text-align: center;
       margin-top: 3rem;
-      background: rgba(30, 41, 59, 0.9); /* Semi-transparent background */
-      padding: 1.5rem;
-      border-radius: 1rem;
+      background: rgba(26, 26, 26, 0.9);
+      padding: 2rem;
+      border: 1px dashed #ff3333;
+      border-radius: 0.5rem;
     }
     .badge-section img {
-      border: 2px solid #38bdf8;
-      border-radius: 1rem;
-      max-width: 320px;
+      border: 2px solid #ff3333;
+      border-radius: 0.5rem;
+      max-width: 350px;
       margin: 1.5rem auto;
-      box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+      box-shadow: 0 0 10px #ff3333;
     }
     .certificate-card {
-      background: rgba(30, 41, 59, 0.9); /* Semi-transparent for consistency */
-      padding: 1rem;
+      background: rgba(30, 30, 30, 0.9);
+      padding: 1.5rem;
       border-radius: 0.5rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 0 5px 15px rgba(255, 51, 51, 0.3);
       text-align: center;
-      width: 300px;
+      width: 400px; /* Larger size for certificates */
       margin: 1rem auto;
       position: relative;
       animation: vibrate 0.5s infinite alternate;
     }
     .certificate-card img {
-      max-width: 100px;
+      max-width: 200px; /* Larger certificate images */
       height: auto;
       margin-bottom: 0.5rem;
     }
     .certificate-card .os {
-      font-size: 0.8rem;
-      color: #94a3b8;
+      font-size: 0.9rem;
+      color: #ff6666;
     }
     .certificate-card .release {
-      font-size: 0.7rem;
-      color: #94a3b8;
+      font-size: 0.8rem;
+      color: #ff6666;
     }
     .certificate-card .points {
-      font-size: 1.2rem;
-      color: #38bdf8;
+      font-size: 1.5rem;
+      color: #ff3333;
       position: absolute;
       top: 1rem;
       right: 1rem;
