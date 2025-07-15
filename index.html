@@ -17,7 +17,7 @@
     header {
       text-align: center;
       margin-bottom: 4rem;
-      background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAoHBwkHBgoJCAkKLQoMCgoMD...') no-repeat center/cover; /* Base64 encoded image placeholder */
+      background: url('assets/clouds.jpg') no-repeat center/cover;
       padding: 2rem;
       border-radius: 1rem;
     }
@@ -76,6 +76,16 @@
       height: auto;
       margin-top: 1rem;
     }
+    .certificate-img {
+      max-width: 200px; /* Medium to small size */
+      height: auto;
+      margin: 1rem auto;
+      animation: vibrate 0.5s infinite alternate;
+    }
+    @keyframes vibrate {
+      from { transform: translateY(0); }
+      to { transform: translateY(-5px); }
+    }
   </style>
 </head>
 <body>
@@ -114,13 +124,13 @@
     <div class="certificates">
       <div class="card">
         <h3>Pre-Security Learning Path</h3>
-        <p>Completed on 7th November 2024<br/>
-        <a href="THM-BQ6X7LWVC7 (1).pdf" target="_blank">📄 View Certificate</a></p>
+        <img src="assets/THM-BQ6X7LWVC7.png" alt="Pre-Security Learning Path Certificate" class="certificate-img" />
+        <p>Completed on 7th November 2024</p>
       </div>
       <div class="card">
         <h3>General Participation</h3>
-        <p>Issued on 27th December 2024<br/>
-        <a href="THM-ORPAHE1B4K.pdf" target="_blank">📄 View Certificate</a></p>
+        <img src="assets/THM-ORPAHE1B4K.png" alt="General Participation Certificate" class="certificate-img" />
+        <p>Issued on 27th December 2024</p>
       </div>
     </div>
   </section>
@@ -128,7 +138,7 @@
   <section class="badge-section">
     <h2>🏅 TryHackMe Badge</h2>
     <img src="https://tryhackme-badges.s3.amazonaws.com/echoistix.png" alt="TryHackMe Badge" />
-    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAoHBwkHBgoJCAkKLQoMCgoMD..." class="cloud-img" alt="Cloud Background" />
+    <img src="assets/clouds.jpg" class="cloud-img" alt="Cloud Background" />
   </section>
 
   <section>
