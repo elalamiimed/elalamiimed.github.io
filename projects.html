@@ -4,45 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Echoistix | Projects</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="particles-js"></div>
 
-    <nav>
+    <nav class="glass-nav">
         <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
+        <a href="projects.html" class="active">Projects</a>
         <a href="certificates.html">Certificates</a>
     </nav>
 
     <main class="container">
-        <h1>My Projects</h1>
+        <h1 class="page-title">My <span>Projects</span></h1>
         
-        <div class="project">
-            <h2>HITSZ Cybersecurity Projects</h2>
-            <p>Collection of cybersecurity projects and research conducted at HITsz</p>
-            <div class="tags">
-                <span>Cybersecurity</span>
-                <span>Python</span>
-                <span>Research</span>
+        <div class="project-card floating">
+            <div class="project-icon">
+                <i class="fas fa-lock-code"></i>
             </div>
-            <a href="https://github.com/elalamiimed/HITSZCS" target="_blank" class="btn">View on GitHub</a>
+            <div class="project-content">
+                <h2>HITSZ Cybersecurity</h2>
+                <p>A collection of security research projects and tools developed during my studies at HITsz</p>
+                <div class="tech-tags">
+                    <span>Python</span>
+                    <span>Security</span>
+                    <span>Research</span>
+                </div>
+                <a href="https://github.com/elalamiimed/HITSZCS" target="_blank" class="project-btn hover-effect">
+                    <span>View on GitHub</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
         </div>
     </main>
 
-    <footer>
+    <footer class="glass-footer">
         <div class="social-links">
-            <a href="https://github.com/elalamiimed" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://tryhackme.com/p/echoistix" target="_blank"><i class="fas fa-user-secret"></i></a>
+            <a href="https://github.com/elalamiimed" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://tryhackme.com/p/echoistix" target="_blank" class="social-icon"><i class="fas fa-user-secret"></i></a>
         </div>
-        <p>&copy; 2025 Echoistix</p>
+        <p class="copyright">&copy; 2025 Echoistix. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS.load('particles-js', 'assets/particles.json');
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
