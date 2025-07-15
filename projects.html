@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Echoistix's cybersecurity projects and research.">
     <title>Echoistix | Projects</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="particles-js"></div>
@@ -19,25 +21,62 @@
         <a href="profiles.html">Profiles</a>
     </nav>
 
-    <main>
-        <header>
-            <h1>My Projects</h1>
-        </header>
+    <header>
+        <h1>My Projects</h1>
+        <p>Cybersecurity projects, tools, and research I've worked on.</p>
+    </header>
 
-        <section class="content-section">
-            <p style="text-align: center; color: #ff8080;">
-                This page is under construction. Project details will be added soon!
-            </p>
-            </section>
-        </main>
+    <main>
+        <section id="projects">
+            <h2>🔧 Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>Network Vulnerability Scanner</h3>
+                    <p>A Python-based tool that scans networks for common vulnerabilities and misconfigurations.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Nmap</span>
+                        <span class="tech-badge">Network Security</span>
+                    </div>
+                    <a href="#" class="project-link">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Custom Password Cracker</h3>
+                    <p>A multi-threaded password cracking tool with support for dictionary and brute-force attacks.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">C++</span>
+                        <span class="tech-badge">Cryptography</span>
+                    </div>
+                    <a href="#" class="project-link">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Web Application Firewall</h3>
+                    <p>A lightweight WAF that detects and blocks common web attacks like SQLi and XSS.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">Web Security</span>
+                    </div>
+                    <a href="#" class="project-link">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
     
-    <footer style="margin-top: 5rem;">
-        <a href="index.html" style="color: #ff4d4d; text-decoration: none;">← Back to Home</a>
+    <footer>
+        <p>Connect with me:</p>
+        <div class="social-links">
+            <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://tryhackme.com/p/echoistix" target="_blank" aria-label="TryHackMe"><i class="fas fa-user-secret"></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 Echoistix. All Rights Reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        // You might need to adjust the path if you moved the .json file
         particlesJS.load('particles-js', 'assets/particles.json', function() {
             console.log('particles.js config loaded');
         });
