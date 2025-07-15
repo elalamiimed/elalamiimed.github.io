@@ -1,122 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Echoistix | Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Orbitron', 'Courier New', monospace;
-      background: #1a1a1a;
-      color: #ff1a1a;
-      line-height: 1.6;
-      padding: 2rem;
-      background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
-    }
-    nav {
-      text-align: center;
-      margin-bottom: 2rem;
-      animation: slideIn 1s ease-out;
-    }
-    nav a {
-      color: #ff4d4d;
-      margin: 0 1.5rem;
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: 700;
-      text-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff4d4d;
-      transition: all 0.3s ease;
-    }
-    nav a:hover {
-      color: #ff1a1a;
-      text-shadow: 0 0 15px #ff1a1a, 0 0 30px #ff4d4d, 0 0 5px #ff1a1a;
-      transform: scale(1.1);
-    }
-    header {
-      text-align: center;
-      margin-bottom: 4rem;
-      padding: 2rem;
-      background: rgba(26, 26, 26, 0.9);
-      border: 2px solid #ff1a1a;
-      border-radius: 0.5rem;
-      box-shadow: 0 0 15px #ff1a1a;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-      font-weight: 900;
-      color: #ff4d4d;
-      text-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff4d4d;
-      animation: pulse 2s infinite;
-    }
-    h2 {
-      font-size: 2rem;
-      margin: 3rem 0 1.5rem;
-      text-align: center;
-      text-shadow: 0 0 10px #ff1a1a;
-      color: #ff4d4d;
-      font-weight: 700;
-    }
-    p {
-      max-width: 700px;
-      margin: 0 auto;
-      font-size: 1.1rem;
-      color: #ff6666;
-      text-shadow: 0 0 5px #ff1a1a;
-    }
-    .badge-section {
-      text-align: center;
-      margin-top: 3rem;
-      background: rgba(26, 26, 26, 0.9);
-      padding: 2rem;
-      border: 2px dashed #ff1a1a;
-      border-radius: 0.5rem;
-      box-shadow: 0 0 15px #ff1a1a;
-    }
-    .badge-section img {
-      border: 2px solid #ff1a1a;
-      border-radius: 0.5rem;
-      max-width: 350px;
-      margin: 1.5rem auto;
-      box-shadow: 0 0 10px #ff1a1a;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-    @keyframes slideIn {
-      from { transform: translateY(-20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Echoistix's personal portfolio. A cybersecurity student passionate about ethical hacking, pen-testing, and security research.">
+    <title>Echoistix | Home</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="certificates.html">Certificates</a>
-    <a href="profiles.html">Profiles</a>
-  </nav>
+    <div id="particles-js"></div>
 
-  <header>
-    <h1>Echoistix</h1>
-    <p>I’m a cybersecurity student at HITsz, passionate about ethical hacking, penetration testing, and all things security. I actively code in Python, C++, and SQL — and I’m deeply involved in learning through TryHackMe.</p>
-  </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="profiles.html">Profiles</a>
+    </nav>
 
-  <section>
-    <h2>💻 Skills</h2>
-    <p style="text-align: center;">
-      Linux | Kali Linux | Networking | Python | C++ | SQL | Bash | Git | Web Security | Reverse Engineering | TryHackMe | HackTheBox
-    </p>
-  </section>
+    <header>
+        <h1>Echoistix</h1>
+        <p>I’m a cybersecurity student at HITsz, passionate about ethical hacking, penetration testing, and all things security. I actively code in Python, C++, and SQL — and I’m deeply involved in learning through TryHackMe.</p>
+    </header>
 
-  <section class="badge-section">
-    <h2>🏅 TryHackMe Badge</h2>
-    <img src="https://tryhackme-badges.s3.amazonaws.com/echoistix.png" alt="TryHackMe Badge" />
-  </section>
+    <main>
+        <section id="skills">
+            <h2>💻 Core Skills</h2>
+            <div class="skills-container">
+                <span class="skill-badge">Linux</span>
+                <span class="skill-badge">Kali Linux</span>
+                <span class="skill-badge">Networking</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">C++</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">Bash</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">Web Security</span>
+                <span class="skill-badge">Reverse Engineering</span>
+                <span class="skill-badge">TryHackMe</span>
+                <span class="skill-badge">HackTheBox</span>
+            </div>
+        </section>
+
+        <section id="badge" class="badge-section">
+            <h2>🏅 TryHackMe Badge</h2>
+            <a href="https://tryhackme.com/p/echoistix" target="_blank" rel="noopener noreferrer">
+                <img src="https://tryhackme-badges.s3.amazonaws.com/echoistix.png" alt="TryHackMe Badge for echoistix" />
+            </a>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Connect with me:</p>
+        <div class="social-links">
+            <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://tryhackme.com/p/echoistix" target="_blank" aria-label="TryHackMe"><i class="fas fa-user-secret"></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 Echoistix. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'assets/particles.json', function() {
+            console.log('particles.js config loaded');
+        });
+    </script>
 </body>
 </html>
