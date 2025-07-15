@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Echoistix's certifications in cybersecurity and ethical hacking.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Echoistix | Certificates</title>
-    
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,49 +15,37 @@
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
         <a href="certificates.html">Certificates</a>
-        <a href="profiles.html">Profiles</a>
     </nav>
 
-    <header>
+    <main class="container">
         <h1>My Certifications</h1>
-        <p>Credentials that validate my cybersecurity knowledge and skills.</p>
-    </header>
-
-    <main>
-        <section id="certificates">
-            <h2>🎓 Certificates</h2>
-            <div class="certificates-container">
-                <div class="certificate-card">
-                    <img src="THM-BQ6X7LWVCT.png" alt="TryHackMe Certificate">
-                    <h3>TryHackMe Complete Beginner</h3>
-                    <p>Completed all beginner learning paths on TryHackMe platform.</p>
-                    <a href="https://tryhackme.com/p/echoistix" target="_blank" class="certificate-link">Verify Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <img src="THM-ORPAHE1B4K.png" alt="TryHackMe Certificate">
-                    <h3>TryHackMe Offensive Pentesting</h3>
-                    <p>Completed offensive penetration testing learning path.</p>
-                    <a href="https://tryhackme.com/p/echoistix" target="_blank" class="certificate-link">Verify Certificate</a>
-                </div>
+        
+        <div class="certificates-grid">
+            <div class="certificate">
+                <img src="THM-BQ6X7LWVCT.png" alt="TryHackMe Certificate">
+                <h3>TryHackMe Complete Beginner</h3>
+                <a href="https://tryhackme.com/p/echoistix" target="_blank" class="btn">Verify</a>
             </div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>Connect with me:</p>
-        <div class="social-links">
-            <a href="https://github.com/elalamiimed" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://tryhackme.com/p/echoistix" target="_blank" aria-label="TryHackMe"><i class="fas fa-user-secret"></i></a>
+            
+            <div class="certificate">
+                <img src="THM-ORPAHE1B4K.png" alt="TryHackMe Certificate">
+                <h3>TryHackMe Offensive Pentesting</h3>
+                <a href="https://tryhackme.com/p/echoistix" target="_blank" class="btn">Verify</a>
+            </div>
         </div>
-        <p class="copyright">&copy; 2025 Echoistix. All Rights Reserved.</p>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/elalamiimed" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://tryhackme.com/p/echoistix" target="_blank"><i class="fas fa-user-secret"></i></a>
+        </div>
+        <p>&copy; 2025 Echoistix</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        particlesJS.load('particles-js', 'assets/particles.json', function() {
-            console.log('particles.js config loaded');
-        });
+        particlesJS.load('particles-js', 'assets/particles.json');
     </script>
 </body>
 </html>
