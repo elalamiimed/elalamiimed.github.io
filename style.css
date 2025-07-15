@@ -84,37 +84,6 @@ h2 {
     color: #ff1a1a;
 }
 
-/* Skills Section */
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    justify-content: center;
-}
-
-.skill-badge {
-    background-color: rgba(255, 26, 26, 0.2);
-    color: #ff4d4d;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    border: 1px solid #ff1a1a;
-}
-
-/* Badge Section */
-.badge-section {
-    text-align: center;
-}
-
-.badge-section img {
-    max-width: 300px;
-    transition: transform 0.3s ease;
-}
-
-.badge-section img:hover {
-    transform: scale(1.05);
-}
-
 /* Certificates Page Styles */
 .certificates-container {
     display: grid;
@@ -141,6 +110,20 @@ h2 {
     border-radius: 4px;
     margin-bottom: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.certificate-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.certificate-link:hover {
+    color: #ff1a1a;
+    text-decoration: underline;
 }
 
 /* Projects Page Styles */
@@ -190,47 +173,6 @@ h2 {
 }
 
 .project-link:hover {
-    color: #ff1a1a;
-    text-decoration: underline;
-}
-
-/* Profiles Page Styles */
-.profiles-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.profile-card {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 8px;
-    padding: 2rem;
-    text-align: center;
-    transition: transform 0.3s ease;
-    border: 1px solid rgba(255, 26, 26, 0.3);
-}
-
-.profile-card:hover {
-    transform: translateY(-5px);
-    border-color: #ff1a1a;
-}
-
-.profile-card i {
-    color: #ff1a1a;
-    margin-bottom: 1rem;
-}
-
-.profile-link {
-    display: inline-block;
-    margin-top: 1rem;
-    color: #ff4d4d;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.profile-link:hover {
     color: #ff1a1a;
     text-decoration: underline;
 }
@@ -286,8 +228,7 @@ footer {
     }
     
     .certificates-container,
-    .projects-container,
-    .profiles-container {
+    .projects-container {
         grid-template-columns: 1fr;
     }
 }
