@@ -3,74 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Echoistix | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"> <!-- Gothic/hacker font -->
+  <title>Echoistix | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Orbitron', sans-serif; /* Gothic/hacker vibe font */
-      background: #1a1a1a; /* Dark background */
-      color: #ff3333; /* Red text */
+      font-family: 'Orbitron', sans-serif;
+      background: #1a1a1a;
+      color: #ff3333;
       line-height: 1.6;
       padding: 2rem;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      color: #ff9999;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      color: #ff3333;
+      text-shadow: 0 0 5px #ff3333;
     }
     header {
       text-align: center;
       margin-bottom: 4rem;
       padding: 2rem;
-      background: rgba(26, 26, 26, 0.9); /* Darker overlay for contrast */
-      border: 2px solid #ff3333; /* Red border for hacker vibe */
+      background: rgba(26, 26, 26, 0.9);
+      border: 2px solid #ff3333;
       border-radius: 0.5rem;
     }
     h1 { font-size: 2.5rem; margin-bottom: 0.5rem; text-transform: uppercase; }
     h2 { font-size: 1.75rem; margin: 3rem 0 1.5rem; text-align: center; text-shadow: 0 0 5px #ff3333; }
     p { max-width: 700px; margin: 0 auto; }
-    .projects, .certificates {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Slightly wider for certificates */
-      gap: 2rem;
-      max-width: 1100px;
-      margin: 0 auto;
-      background: rgba(26, 26, 26, 0.9); /* Dark semi-transparent background */
-      padding: 2rem;
-      border: 1px dashed #ff3333; /* Hacker-style dashed border */
-      border-radius: 0.5rem;
-    }
-    .card {
-      background: rgba(30, 30, 30, 0.9);
-      padding: 1.5rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 5px 15px rgba(255, 51, 51, 0.3); /* Red shadow for vibe */
-      transition: transform 0.3s ease;
-      text-align: center;
-      position: relative;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card h3 {
-      margin-bottom: 0.5rem;
-      color: #ff6666; /* Lighter red for headers */
-      font-size: 1.5rem;
-    }
-    .card p {
-      font-size: 0.95rem;
-    }
-    a { color: #ff9999; text-decoration: none; }
-    footer {
-      margin-top: 4rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #ff3333;
-      background: rgba(26, 26, 26, 0.9);
-      padding: 1rem;
-      border: 1px solid #ff3333;
-      border-radius: 0.5rem;
-    }
-    .social-links {
-      text-align: center;
-      margin-top: 2rem;
-    }
     .badge-section {
       text-align: center;
       margin-top: 3rem;
@@ -86,44 +54,16 @@
       margin: 1.5rem auto;
       box-shadow: 0 0 10px #ff3333;
     }
-    .certificate-card {
-      background: rgba(30, 30, 30, 0.9);
-      padding: 1.5rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 5px 15px rgba(255, 51, 51, 0.3);
-      text-align: center;
-      width: 400px; /* Larger size for certificates */
-      margin: 1rem auto;
-      position: relative;
-      animation: vibrate 0.5s infinite alternate;
-    }
-    .certificate-card img {
-      max-width: 200px; /* Larger certificate images */
-      height: auto;
-      margin-bottom: 0.5rem;
-    }
-    .certificate-card .os {
-      font-size: 0.9rem;
-      color: #ff6666;
-    }
-    .certificate-card .release {
-      font-size: 0.8rem;
-      color: #ff6666;
-    }
-    .certificate-card .points {
-      font-size: 1.5rem;
-      color: #ff3333;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
-    @keyframes vibrate {
-      from { transform: translateY(0); }
-      to { transform: translateY(-5px); }
-    }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="certificates.html">Certificates</a>
+    <a href="profiles.html">Profiles</a>
+  </nav>
+
   <header>
     <h1>Echoistix</h1>
     <p>I’m a cybersecurity student at HITsz, passionate about ethical hacking, penetration testing, and all things security. I actively code in Python, C++, and SQL — and I’m deeply involved in learning through TryHackMe.</p>
@@ -136,59 +76,9 @@
     </p>
   </section>
 
-  <section>
-    <h2>🚀 Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>TryHackMe Writeups</h3>
-        <p>My solutions and learning notes from TryHackMe rooms, focusing on exploitation, enumeration, and privilege escalation.</p>
-      </div>
-      <div class="card">
-        <h3>Sniffer Tool (Python)</h3>
-        <p>A basic packet sniffer using Python and Scapy to monitor traffic and analyze packet data on local networks.</p>
-      </div>
-      <div class="card">
-        <h3>Cybersecurity Club Website</h3>
-        <p>Website for our student-led cybersecurity club at HITsz, hosting CTF challenges, notes, and learning paths.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>📜 Certificates</h2>
-    <div class="certificates">
-      <div class="certificate-card">
-        <img src="THM-BQ6X7LWC7.png" alt="Pre-Security Learning Path Certificate" />
-        <h3>Pre-Security Learning Path</h3>
-        <div class="os">OS: Linux</div>
-        <div class="release">Release: 07 Nov 2024</div>
-        <div class="points">45 points</div>
-      </div>
-      <div class="certificate-card">
-        <img src="THM-ORPAHE1B4K.png" alt="General Participation Certificate" />
-        <h3>General Participation</h3>
-        <div class="os">OS: Linux</div>
-        <div class="release">Release: 27 Dec 2024</div>
-        <div class="points">45 points</div>
-      </div>
-    </div>
-  </section>
-
   <section class="badge-section">
     <h2>🏅 TryHackMe Badge</h2>
     <img src="https://tryhackme-badges.s3.amazonaws.com/echoistix.png" alt="TryHackMe Badge" />
   </section>
-
-  <section>
-    <h2>🌐 Online Profiles</h2>
-    <div class="social-links">
-      <a href="https://github.com/echoistix" target="_blank">GitHub</a> |
-      <a href="https://tryhackme.com/p/echoistix" target="_blank">TryHackMe</a>
-    </div>
-  </section>
-
-  <footer>
-    © 2025 Echoistix. All rights reserved.
-  </footer>
 </body>
 </html>
