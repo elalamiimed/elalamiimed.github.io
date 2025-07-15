@@ -17,6 +17,9 @@
     header {
       text-align: center;
       margin-bottom: 4rem;
+      background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAoHBwkHBgoJCAkKLQoMCgoMD...') no-repeat center/cover; /* Base64 encoded image placeholder */
+      padding: 2rem;
+      border-radius: 1rem;
     }
     h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
     h2 { font-size: 1.75rem; margin: 3rem 0 1.5rem; text-align: center; color: #38bdf8; }
@@ -67,6 +70,11 @@
       max-width: 320px;
       margin: 1.5rem auto;
       box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    }
+    .badge-section .cloud-img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
     }
   </style>
 </head>
@@ -120,6 +128,7 @@
   <section class="badge-section">
     <h2>🏅 TryHackMe Badge</h2>
     <img src="https://tryhackme-badges.s3.amazonaws.com/echoistix.png" alt="TryHackMe Badge" />
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAoHBwkHBgoJCAkKLQoMCgoMD..." class="cloud-img" alt="Cloud Background" />
   </section>
 
   <section>
@@ -131,7 +140,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Echoistix. All rights reserved.
+    © 2025 Echoistix. All rights reserved.
   </footer>
 </body>
 </html>
