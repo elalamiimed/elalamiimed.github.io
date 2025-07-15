@@ -4,55 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Echoistix | Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Orbitron', sans-serif;
+      font-family: 'Orbitron', 'Courier New', monospace;
       background: #1a1a1a;
-      color: #ff3333;
+      color: #ff1a1a;
       line-height: 1.6;
       padding: 2rem;
+      background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
     }
     nav {
       text-align: center;
       margin-bottom: 2rem;
+      animation: slideIn 1s ease-out;
     }
     nav a {
-      color: #ff9999;
-      margin: 0 1rem;
+      color: #ff4d4d;
+      margin: 0 1.5rem;
       text-decoration: none;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff4d4d;
+      transition: all 0.3s ease;
     }
     nav a:hover {
-      color: #ff3333;
-      text-shadow: 0 0 5px #ff3333;
+      color: #ff1a1a;
+      text-shadow: 0 0 15px #ff1a1a, 0 0 30px #ff4d4d, 0 0 5px #ff1a1a;
+      transform: scale(1.1);
     }
     header {
       text-align: center;
       margin-bottom: 4rem;
       padding: 2rem;
       background: rgba(26, 26, 26, 0.9);
-      border: 2px solid #ff3333;
+      border: 2px solid #ff1a1a;
       border-radius: 0.5rem;
+      box-shadow: 0 0 15px #ff1a1a;
     }
-    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; text-transform: uppercase; }
-    h2 { font-size: 1.75rem; margin: 3rem 0 1.5rem; text-align: center; text-shadow: 0 0 5px #ff3333; }
-    p { max-width: 700px; margin: 0 auto; }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: #ff4d4d;
+      text-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff4d4d;
+      animation: pulse 2s infinite;
+    }
+    h2 {
+      font-size: 2rem;
+      margin: 3rem 0 1.5rem;
+      text-align: center;
+      text-shadow: 0 0 10px #ff1a1a;
+      color: #ff4d4d;
+      font-weight: 700;
+    }
+    p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #ff6666;
+      text-shadow: 0 0 5px #ff1a1a;
+    }
     .badge-section {
       text-align: center;
       margin-top: 3rem;
       background: rgba(26, 26, 26, 0.9);
       padding: 2rem;
-      border: 1px dashed #ff3333;
+      border: 2px dashed #ff1a1a;
       border-radius: 0.5rem;
+      box-shadow: 0 0 15px #ff1a1a;
     }
     .badge-section img {
-      border: 2px solid #ff3333;
+      border: 2px solid #ff1a1a;
       border-radius: 0.5rem;
       max-width: 350px;
       margin: 1.5rem auto;
-      box-shadow: 0 0 10px #ff3333;
+      box-shadow: 0 0 10px #ff1a1a;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    @keyframes slideIn {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
