@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mohamed El Alami">
+  <rect width="64" height="64" rx="14" fill="#0F172A"/>
+  <path d="M14 46V18h6.6l9.2 14.6L39 18h6.8v28h-5.6V27.4l-8.5 13.2h-3.6L19.6 27.4V46H14Z" fill="#FFFFFF"/>
+  <circle cx="50" cy="17" r="4" fill="#3B82F6"/>
+</svg>

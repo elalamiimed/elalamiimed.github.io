@@ -1,0 +1,11 @@
+﻿# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+
+# local preview artefacts
+_qa.html
+_mobile.html
+qa-probe.js
+*.log
