@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Mohamed El Alami — CV</title>
-<meta name="description" content="Two-page CV of Mohamed El Alami — Computer Science student at HITSZ, systematic trading research and AI tooling." />
+<meta name="description" content="Academic CV of Mohamed El Alami — computer science student at HITSZ, seeking a research supervisor in AI safety." />
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -137,14 +137,14 @@
     margin: var(--ds-space-6) auto;
     padding: var(--ds-space-10) var(--ds-space-12);
     background-color: var(--ds-color-neutral-0);
-    box-shadow: var(--ds-shadow-lg);
-    border-radius: var(--ds-radius-lg);
+    border: var(--ds-border-width) solid var(--ds-color-neutral-200);
+    border-radius: var(--ds-radius-sm);
   }
 
   .cv-head {
     display: flex;
     flex-direction: column;
-    gap: var(--ds-space-3);
+    gap: var(--ds-space-2);
     padding-bottom: var(--ds-space-3);
     border-bottom: var(--ds-border-width) solid var(--ds-color-neutral-900);
   }
@@ -160,8 +160,8 @@
   .cv-role {
     font-size: var(--ds-font-size-body);
     line-height: var(--ds-line-height-body);
-    font-weight: var(--ds-font-weight-semibold);
-    color: var(--ds-color-brand-700);
+    font-weight: var(--ds-font-weight-medium);
+    color: var(--ds-color-neutral-700);
   }
 
   .cv-contact {
@@ -178,7 +178,7 @@
   .cv-contact a { color: inherit; text-decoration: none; }
 
   .cv-section {
-    padding-top: var(--ds-space-2);
+    padding-top: var(--ds-space-3);
   }
 
   .cv-section-title {
@@ -191,7 +191,7 @@
     font-weight: var(--ds-font-weight-semibold);
     letter-spacing: var(--ds-letter-spacing-caption);
     text-transform: uppercase;
-    color: var(--ds-color-brand-700);
+    color: var(--ds-color-neutral-700);
     padding-bottom: var(--ds-space-1);
     border-bottom: var(--ds-border-width) solid var(--ds-color-neutral-200);
     margin-bottom: var(--ds-space-1);
@@ -240,7 +240,7 @@
     font-size: var(--ds-font-size-body-sm);
     line-height: var(--ds-line-height-body-sm);
     font-weight: var(--ds-font-weight-medium);
-    color: var(--ds-color-brand-700);
+    color: var(--ds-color-neutral-700);
   }
 
   .cv-text { color: var(--ds-color-neutral-700); }
@@ -262,7 +262,7 @@
   .cv-bullets li::before {
     content: "—";
     flex: none;
-    color: var(--ds-color-brand-600);
+    color: var(--ds-color-neutral-400);
     font-family: var(--ds-font-mono);
   }
 
@@ -271,6 +271,13 @@
     line-height: var(--ds-line-height-body-sm);
     color: var(--ds-color-neutral-700);
     max-width: 68ch;
+  }
+
+  .cv-spec {
+    font-size: var(--ds-font-size-caption);
+    line-height: var(--ds-line-height-caption);
+    letter-spacing: var(--ds-letter-spacing-caption);
+    color: var(--ds-color-neutral-500);
   }
 
   .cv-groups {
@@ -300,20 +307,28 @@
     width: var(--ds-breakpoint-md);
     margin: var(--ds-space-6) auto var(--ds-space-0);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--ds-space-4);
+    font-family: var(--ds-font-mono);
+    font-size: var(--ds-font-size-caption);
+    letter-spacing: var(--ds-letter-spacing-caption);
+    color: var(--ds-color-neutral-500);
+    text-transform: uppercase;
   }
 
   .cv-toolbar a {
     display: inline-flex;
     align-items: center;
     padding: var(--ds-space-2) var(--ds-space-4);
-    border-radius: var(--ds-radius-md);
-    background-color: var(--ds-color-neutral-900);
-    color: var(--ds-color-neutral-0);
+    border: var(--ds-border-width) solid var(--ds-color-neutral-300);
+    border-radius: var(--ds-radius-sm);
+    color: var(--ds-color-neutral-900);
     font-size: var(--ds-font-size-body-sm);
     line-height: var(--ds-line-height-body-sm);
-    font-weight: var(--ds-font-weight-semibold);
+    font-weight: var(--ds-font-weight-medium);
     text-decoration: none;
+    text-transform: none;
   }
 
   @page {
@@ -327,7 +342,7 @@
       width: auto;
       margin: var(--ds-space-0);
       padding: var(--ds-space-0);
-      box-shadow: none;
+      border: none;
       border-radius: var(--ds-space-0);
     }
     .cv-toolbar { display: none; }
@@ -343,7 +358,7 @@
       width: 100%;
       margin: var(--ds-space-0);
       padding: var(--ds-space-6) var(--ds-space-5);
-      box-shadow: none;
+      border: none;
       border-radius: var(--ds-space-0);
     }
     .cv-toolbar { padding-block: var(--ds-space-4); }
@@ -354,13 +369,14 @@
 <body>
 
 <div class="cv-toolbar">
-  <a href="index.html">← Back to portfolio</a>
+  <a href="index.html">← Back to site</a>
+  <span>Curriculum vitae · A4</span>
 </div>
 
 <main class="sheet">
   <header class="cv-head">
     <h1 class="cv-name">Mohamed El Alami</h1>
-    <p class="cv-role">Computer Science Student — Systematic Trading Research &amp; AI Tooling</p>
+    <p class="cv-role">Computer Science · AI Safety Research (prospective)</p>
     <p class="cv-contact">
       <span>Shenzhen, China</span>
       <a href="mailto:elalamimeded@gmail.com">elalamimeded@gmail.com</a>
@@ -370,12 +386,13 @@
   </header>
 
   <section class="cv-section">
-    <h2 class="cv-section-title">Summary</h2>
+    <h2 class="cv-section-title">Research Interests</h2>
     <p class="cv-summary">
-      Moroccan computer science student at Harbin Institute of Technology, Shenzhen (B.Eng. 2024–2028).
-      Builds systematic trading research tooling — market-structure analysis, entry/exit logic, risk rules
-      and backtesting — and local-first AI agent software. Founded HITSZCS (53★) and directs General
-      Affairs for HITSZ's international student club. Seeking a quantitative research or trading internship.
+      AI safety, focused on the evaluation and oversight of agentic systems: how LLM agents are tested
+      for long-horizon failure modes, how memory and tool use change behaviour, what interpretability can
+      reveal about internal state, and how explicit specifications — guardrails, rejection checklists,
+      fail-closed gates — can be made testable. Background in empirical machine learning and systems
+      engineering. Seeking MSc/PhD supervision (2028 intake); open to research assistantships.
     </p>
   </section>
 
@@ -388,8 +405,9 @@
       </div>
       <p class="cv-role-line">B.Eng. Computer Science &amp; Technology</p>
       <p class="cv-text">
-        Coursework: Data Structures &amp; Algorithms, Computer Networks, Programming Design, Computational
-        Mathematics. Class monitor 2024–2025; invited HITSZ orientation-day speaker.
+        Coursework: machine learning (SVM, ensembles, PCA, neural networks, ROC/AUC), data structures
+        &amp; algorithms, databases and SQL, computer networks, signals &amp; systems, object-oriented
+        programming. Elected class monitor 2024–2025; invited orientation-day speaker.
       </p>
     </div>
     <div class="cv-block">
@@ -402,146 +420,174 @@
   </section>
 
   <section class="cv-section">
-    <h2 class="cv-section-title">Experience &amp; Leadership</h2>
+    <h2 class="cv-section-title">Research &amp; Engineering Projects</h2>
+
     <div class="cv-block">
       <div class="cv-row">
-        <p class="cv-org">HSIYC — HITSZ International Youth Club</p>
-        <p class="cv-date">2026 — present</p>
-      </div>
-      <p class="cv-role-line">Director, General Affairs Department (综合事务部 部长)</p>
-      <ul class="cv-bullets">
-        <li>Lead a 23-person department in HITSZ's first formally recognised international student organisation (167 members, five departments): administration, records, minutes, logistics and finance.</li>
-        <li>Ran department recruitment — 127 applicants scored by eight interviewers, 41 direct selections, 13 confirmed into General Affairs.</li>
-        <li>Authored the 25-slide General Meeting II governance deck and presented the Fall 2026 recap (16 completed activities across six areas).</li>
-      </ul>
-    </div>
-    <div class="cv-block">
-      <div class="cv-row">
-        <p class="cv-org">HITSZCS — open-source student library</p>
-        <p class="cv-date">Oct 2024 — present</p>
-      </div>
-      <p class="cv-role-line">Founder &amp; Maintainer · 53★, 9 forks, 16 contributors · hitszcs.com</p>
-      <ul class="cv-bullets">
-        <li>Founded an open library of course notes, past papers and study material for HITSZ computer-science students; 563 commits so far.</li>
-        <li>Designed and shipped the public site; ran GitHub workshops for students new to version control.</li>
-        <li>Invited to tell the HITSZCS story in the HITSZ orientation address to an incoming cohort.</li>
-      </ul>
-    </div>
-    <div class="cv-block">
-      <div class="cv-row">
-        <p class="cv-org">Hack Hive Hackathon 01 — "Study Buddy"</p>
-        <p class="cv-date">2026</p>
-      </div>
-      <p class="cv-role-line">Organiser &amp; platform builder · 71-hour event</p>
-      <ul class="cv-bullets">
-        <li>Designed the format for two-person teams with automatic solo-entrant matching; built the event site and the PHP team-matching backend.</li>
-        <li>Wrote the brief, rules and judging criteria; judged six submissions on a front-end / features / UX rubric.</li>
-      </ul>
-    </div>
-    <div class="cv-block">
-      <div class="cv-row">
-        <p class="cv-org">HITSZ — Class 2, Computer Science</p>
-        <p class="cv-date">2024 — 2025</p>
-      </div>
-      <p class="cv-role-line">Class Monitor (elected)</p>
-      <ul class="cv-bullets">
-        <li>Chaired class committee meetings; ran student-ID distribution, attendance and information collection.</li>
-        <li>Voted by classmates to represent them; escalated cohort-wide concerns about a mid-term teaching method to the committee.</li>
-      </ul>
-    </div>
-    <div class="cv-block">
-      <div class="cv-row">
-        <p class="cv-org">Independent quantitative research</p>
-        <p class="cv-date">Ongoing · paper only</p>
+        <p class="cv-org">LearnyBrain — adaptive tutoring agent</p>
+        <p class="cv-date">private</p>
       </div>
       <p class="cv-text">
-        Studies retail market structure across FX, gold, equities, ETFs and crypto, and builds the tooling
-        around it: pattern discovery, signal-based rules, entry/exit logic, risk controls and backtesting.
+        Agent harness that probes where a learner's understanding ends, maps the dependency path to a
+        goal, then teaches and verifies one reasoning step at a time; a persistent knowledge graph carries
+        state across sessions. An exercise in agent state, step-wise verification and long-horizon coherence.
       </p>
+      <p class="cv-spec mono">TypeScript · Next.js · Electron</p>
+    </div>
+
+    <div class="cv-block">
+      <div class="cv-row">
+        <p class="cv-org">Amnesia — local-first memory for LLM agents</p>
+        <p class="cv-date">public</p>
+      </div>
+      <p class="cv-text">
+        Long-term memory layer for Ollama models: hybrid SQLite full-text and embedding recall behind an
+        MCP interface, no cloud and no telemetry. The research question is the audit surface — what an
+        agent stores, when it retrieves it, and how contradictory memories change behaviour.
+      </p>
+      <p class="cv-spec mono">Python · SQLite · MIT · ~11.5k lines · 16 test files</p>
+    </div>
+
+    <div class="cv-block">
+      <div class="cv-row">
+        <p class="cv-org">Agentica — guarded bilingual writing pipeline</p>
+        <p class="cv-date">public</p>
+      </div>
+      <p class="cv-text">
+        A 27-question intake produces a publication-ready EN/中文 draft, which is then gated by a
+        deterministic rejection checklist distilled from 17 approved articles and 130 headings. An
+        exercise in constraining generation with explicit, testable criteria.
+      </p>
+      <p class="cv-spec mono">Python · LLM APIs · 13 QA test files</p>
+    </div>
+
+    <div class="cv-block">
+      <div class="cv-row">
+        <p class="cv-org">CryptoBot — empirical study of 41,470 token launches</p>
+        <p class="cv-date">public</p>
+      </div>
+      <p class="cv-text">
+        Labelled launch corpus (41,470 launches, 45,000+ on-chain tapes) used to test whether early
+        observables predict extreme outcomes. A gradient-boosted classifier improved from ROC-AUC 0.60 to
+        0.75 across launch windows; 18 written reports. Paper trading only — no wallet, no signing.
+      </p>
+      <p class="cv-spec mono">Python · pandas · scikit-learn · XGBoost</p>
+    </div>
+
+    <div class="cv-block">
+      <div class="cv-row">
+        <p class="cv-org">MISO — 20-engine gold macro research system</p>
+        <p class="cv-date">private</p>
+      </div>
+      <p class="cv-text">
+        Twenty signal engines (COT positioning, intermarket, volatility, ETF flows, COMEX, USD liquidity)
+        aggregate into weekly and daily decisions, with an 18-tab dashboard and reproducible backtests.
+        Every signal is traceable to its input and every decision reproducible from stored state.
+      </p>
+      <p class="cv-spec mono">Python · FastAPI · SQLite · Streamlit · 82k lines · 486 files · 37 test files</p>
+    </div>
+
+    <div class="cv-block">
+      <div class="cv-row">
+        <p class="cv-org">Pump Terminal — fail-closed trading terminal</p>
+        <p class="cv-date">local only</p>
+      </div>
+      <p class="cv-text">
+        Production-oriented Solana terminal with realtime candles and tape, volume profile, deterministic
+        paper replay and a three-gate risk engine. The live gate fails closed: if a precondition cannot be
+        verified, the system does nothing — the closest engineering analogue to enforcing hard constraints.
+      </p>
+      <p class="cv-spec mono">FastAPI · Next.js · Postgres/TimescaleDB · Redis · 116k lines · 552 Python tests</p>
+    </div>
+
+    <div class="cv-block">
+      <div class="cv-row">
+        <p class="cv-org">Session-Sweep Engine — strategy as an evaluable specification</p>
+        <p class="cv-date">public</p>
+      </div>
+      <p class="cv-text">
+        Event-driven Backtrader backtester for an XAUUSD session-liquidity-sweep strategy; every rule from
+        the playbook became an explicit, testable precondition (seven gates, 2% risk model, daily circuit
+        breaker) on real gold data.
+      </p>
+      <p class="cv-spec mono">Python · Backtrader · Pydantic</p>
     </div>
   </section>
 
   <section class="cv-section">
-    <h2 class="cv-section-title">Selected Projects</h2>
-    <div class="cv-block">
-      <div class="cv-row">
-        <p class="cv-org">HITSZCS</p>
-        <p class="cv-date">Python · 53★</p>
-      </div>
-      <p class="cv-text">Open study-material library and site for HITSZ CS students — 53 stars, 9 forks, 563 commits from 16 contributors; live at hitszcs.com.</p>
-    </div>
-    <div class="cv-block">
-      <div class="cv-row">
-        <p class="cv-org">MISO — Gold Macro Engine</p>
-        <p class="cv-date">Python · private</p>
-      </div>
-      <p class="cv-text">Macro signal engine for XAUUSD: COT positioning, intermarket, volatility, ETF-flow, COMEX and USD-liquidity engines feeding weekly and daily long/short decisions. 82k lines, 486 files, 37 test files.</p>
-    </div>
-    <div class="cv-block">
-      <div class="cv-row">
-        <p class="cv-org">CryptoBot</p>
-        <p class="cv-date">Python · research</p>
-      </div>
-      <p class="cv-text">Empirical study of newly discovered Solana tokens: 41,470 labelled launches, 45,000+ on-chain tapes and a launch-window classifier. Paper only — no wallet, no signing.</p>
-    </div>
-    <div class="cv-block">
-      <div class="cv-row">
-        <p class="cv-org">Session-Sweep Engine</p>
-        <p class="cv-date">Python · Backtrader</p>
-      </div>
-      <p class="cv-text">Modular, event-driven backtester for an XAUUSD session-liquidity-sweep strategy: 1-minute sweep detection, candlestick confirmation, ATR stops and OCO brackets on real gold data.</p>
-    </div>
-    <div class="cv-block">
-      <div class="cv-row">
-        <p class="cv-org">Agentica</p>
-        <p class="cv-date">Python · LLM</p>
-      </div>
-      <p class="cv-text">Bilingual EN/中文 article writer: 27-question intake form → publication-ready draft, pre-checked against reviewers' rejection patterns.</p>
-    </div>
-  </section>
-
-  <section class="cv-section">
-    <h2 class="cv-section-title">Skills</h2>
+    <h2 class="cv-section-title">Technical Skills</h2>
     <dl class="cv-groups">
       <div class="cv-group">
         <dt>Languages</dt>
-        <dd>Python (primary), TypeScript / JavaScript, SQL / PL-SQL, Java, C++ (coursework), HTML / CSS</dd>
+        <dd>Python (primary), TypeScript / JavaScript, Java, C++ (coursework), SQL</dd>
       </div>
       <div class="cv-group">
-        <dt>Tools</dt>
-        <dd>Flask, FastAPI, Git / GitHub, LLM APIs &amp; agents, Oracle APEX, Linux, Docker</dd>
+        <dt>ML</dt>
+        <dd>scikit-learn, pandas, XGBoost, evaluation methodology</dd>
       </div>
       <div class="cv-group">
-        <dt>Domains</dt>
-        <dd>Trading-systems research, backtesting &amp; risk rules, AI agents, machine learning (coursework), computer networks</dd>
+        <dt>Systems</dt>
+        <dd>FastAPI, Flask, Node.js, Linux, Docker, Git</dd>
+      </div>
+      <div class="cv-group">
+        <dt>Interfaces</dt>
+        <dd>React, Next.js</dd>
       </div>
     </dl>
   </section>
 
   <section class="cv-section">
-    <h2 class="cv-section-title">Credentials</h2>
+    <h2 class="cv-section-title">Teaching, Mentoring &amp; Service</h2>
     <div class="cv-block">
       <div class="cv-row">
-        <p class="cv-org">Direct Funded — Certified Trader, Phase 1</p>
-        <p class="cv-date">Mar 2025</p>
+        <p class="cv-org">HITSZCS — founder &amp; maintainer</p>
+        <p class="cv-date">2024 — present</p>
       </div>
-      <p class="cv-text">Passed Phase 1 of a funded-trader evaluation programme (Funding Program Evaluation-10000).</p>
+      <p class="cv-text">
+        Open course-material library for HITSZ computer-science students: 53 stars, 9 forks, 563 commits,
+        16 contributors, live at hitszcs.com. Ran GitHub workshops and described the project in the HITSZ
+        orientation address.
+      </p>
     </div>
     <div class="cv-block">
       <div class="cv-row">
-        <p class="cv-org">FundingPips — Certificate of Achievement</p>
-        <p class="cv-date">May 2025</p>
+        <p class="cv-org">HSIYC — Director, General Affairs (综合事务部 部长)</p>
+        <p class="cv-date">2026 — present</p>
       </div>
-      <p class="cv-text">Passed Phase 1 and completed the Evaluation Stage of a proprietary-trading funding programme.</p>
+      <p class="cv-text">
+        Lead a 23-person department in HITSZ's first formally recognised international student organisation
+        (167 members); ran department recruitment (127 applicants) and authored the club's governance and
+        progress documentation.
+      </p>
+    </div>
+    <div class="cv-block">
+      <div class="cv-row">
+        <p class="cv-org">Hack Hive Hackathon 01 — organiser &amp; judge</p>
+        <p class="cv-date">2026</p>
+      </div>
+      <p class="cv-text">
+        Designed a 71-hour hackathon for two-person teams, built the event site and PHP team-matching
+        backend, wrote the rules and judged six submissions.
+      </p>
+    </div>
+    <div class="cv-block">
+      <div class="cv-row">
+        <p class="cv-org">Class monitor — HITSZ, Class 2 (elected)</p>
+        <p class="cv-date">2024 — 2025</p>
+      </div>
+      <p class="cv-text">
+        Chaired class committee meetings and represented classmates, including escalating cohort-wide
+        concerns about a mid-term teaching method.
+      </p>
     </div>
   </section>
 
   <section class="cv-section">
-    <h2 class="cv-section-title">Languages &amp; Interests</h2>
+    <h2 class="cv-section-title">Languages</h2>
     <p class="cv-text">
       Arabic (native) · English (fluent) · French (fluent) · Chinese 中文 (intermediate) · Spanish (beginner)
     </p>
-    <p class="cv-text">Forex &amp; markets · music production · Chinese kung fu</p>
+    <p class="cv-text">References available on request.</p>
   </section>
 </main>
 
