@@ -1077,6 +1077,83 @@ strong {
   display: block;
 }
 
+.more-block {
+  display: grid;
+  gap: var(--ds-space-6);
+  margin-top: var(--ds-space-10);
+  padding-top: var(--ds-space-8);
+  border-top: var(--ds-border-width) solid var(--ds-color-neutral-200);
+}
+
+.more-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ds-space-1);
+}
+
+.more-title {
+  font-size: var(--ds-font-size-h3);
+  line-height: var(--ds-line-height-h3);
+  font-weight: var(--ds-font-weight-h3);
+  letter-spacing: var(--ds-letter-spacing-h3);
+  color: var(--ds-color-neutral-900);
+}
+
+.more-note {
+  font-size: var(--ds-font-size-body-sm);
+  line-height: var(--ds-line-height-body-sm);
+  color: var(--ds-color-neutral-500);
+}
+
+.more-grid {
+  display: grid;
+  gap: var(--ds-space-4);
+}
+
+.more-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ds-space-2);
+  padding-left: var(--ds-space-4);
+  border-left: var(--ds-border-width) solid var(--ds-color-brand-100);
+}
+
+.more-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--ds-space-2);
+  font-size: var(--ds-font-size-body);
+  line-height: var(--ds-line-height-body);
+  font-weight: var(--ds-font-weight-semibold);
+  color: var(--ds-color-neutral-900);
+}
+
+.more-tag {
+  padding: var(--ds-space-1) var(--ds-space-2);
+  border-radius: var(--ds-radius-full);
+  border: var(--ds-border-width) solid var(--ds-color-brand-100);
+  background-color: var(--ds-color-brand-50);
+  font-size: var(--ds-font-size-caption);
+  line-height: var(--ds-line-height-caption);
+  font-weight: var(--ds-font-weight-medium);
+  letter-spacing: var(--ds-letter-spacing-caption);
+  color: var(--ds-color-brand-700);
+}
+
+.more-desc {
+  font-size: var(--ds-font-size-body-sm);
+  line-height: var(--ds-line-height-body-sm);
+  color: var(--ds-color-neutral-700);
+}
+
+.more-stack {
+  font-size: var(--ds-font-size-caption);
+  line-height: var(--ds-line-height-caption);
+  letter-spacing: var(--ds-letter-spacing-caption);
+  color: var(--ds-color-neutral-500);
+}
+
 .project-private {
   display: inline-flex;
   align-items: center;
@@ -1357,6 +1434,10 @@ strong {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .more-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .contact-title {
     font-size: var(--ds-font-size-h1);
   }
@@ -1415,6 +1496,10 @@ strong {
 
   .skills-grid > .card {
     grid-column: span 1;
+  }
+
+  .more-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
